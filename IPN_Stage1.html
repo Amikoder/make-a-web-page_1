@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+
+<!--Issues fixed thanks to helpful reviewer: 
+Line 18: Meta charset was missing from <head> section.
+Line 58: 'Browser' typo 
+Line 76: clarified 
+Line 147: 'Separate' typo 
+Line 68: changed out {} brackets for &lt; &gt; coding. I can see how given CSS curly bracket use, the examples were misleading
+Line 77, 86, 153: closed the <p> tag prior to starting the <div class="example">
+   <p>'s don't contain <div>'s: Noted.
+Line 149: HTML5 doesn't requires type="text/css" attribute
+Line 213: Results from validator test I ran (knowing that I was submitting with errors in the hopes of having a reviewer be able to explain them, which he or she did, thank you!) 
+Line 216: Egg on face: fixed the CSS spacing issue (I swear it passed when I ran the code prior to moving from codepen to Sublime and then submitting)
+
+Thanks for all your help!-->
+
+<head>
+  <title>Unit One Notes - 05072015 </title>
+  <link rel="stylesheet" href="IPN_Stage1CSS.css">
+  <meta charset="UTF-8"> 
+</head>
+
+<body> 
+ <h1>Noteworthy Tidbits</h1>
+   <div class="TOC">
+     <h2>Table of Contents</h2>
+    <ol>
+      <li><a href="#Unit-1.0">Unit One.Zero</a>
+        <ul>
+          <li><a href="#1.basics">Basics</a></li>
+          <li><a href="#1.elements">Elements</a></li>
+        </ul>
+      </li>
+      <li class="TOC">
+        <a href="#Unit-1.2">Unit One.Two</a>
+        <ul>
+          <li><a href="#1.stealing">Learning from Others</a></li>
+        </ul>
+      </li>
+      <li class="TOC">
+        <a href="#Unit-1.3">Unit One.Three</a>
+        <ul>
+          <li><a href="#1.CSS">CSS Basics</a></li>
+          <li><a href="#1.CSS-benefits">CSS Benefits</a></li>
+          <li><a href="#1.images">Images</a></li>
+          <li><a href="#1.steps">Styling Process</a></li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+ 
+ <div class="unit" id="Unit-1.0">
+   <h2>Unit One.Zero</h2>
+     <div class="section" id="1.basics">
+       <div class="section-title">
+         The Internet
+       </div>
+          <div class="notes">
+           <p> 
+            People with computers download browsers; browsers, using HTTP, send out queries and return web pages plucked from super-space-saving filing-cabinet computers called servers...hidden in air conditioned closets. <!--or warehouses! no offense meant-->
+           </p>
+           <p>
+            These pages are usually formatted using HTML, 
+            <b>hypertext markup language</b>, and can contain <em>almost anything</em>: text, images, videos, links, pdf's, multiple levels.  The browser reads the text, markup and references to turn the information into something user-friendly.
+           </p>
+          </div>
+       </div>
+
+   <div class="section">
+     <div class="section-title" id="1.elements">
+         Elements
+     </div>
+       <div class="notes">
+         <p>
+           Elements are used in markup, which controls how a webp age, and its content, are rendered by the browser.  Elements consist, usually, of an <b>opening tag, content, and a closing tag</b>. Some elements, called <span class="bold">void tags</span>, don't need closing tags. 
+          </p>
+             <div class="example"> 
+                Line break: &lt;br&gt; <br>
+                and the image element: &lt;img  src="url" alt="text"&gt; 
+               <br>
+                are two examples of void tags
+               <br>
+               <br>
+                Bold, and/or Strong: &lt;b&gt;text&lt;/b&gt;, &lt;strong&gt;text&lt;/strong&gt;
+               <br> need closing tags
+            </div>
+         <p>
+            Elements can be either <b>inline</b> or <b>block</b>.  Inline elements create no additional space around them and can "butt" right up against text.  Block elements create a box in which their content resides. 
+         </p>   
+              <div class="example">
+                Line break &lt;br&gt; is inline, but paragraph &lt;p&gt;&lt;/p&gt;<p>is block text</p>
+                and created the space preceding and following the above line. 
+              </div>
+         <p>
+            But both are necessary to manage the "white space" on an HTML page, since spaces and carriage returns are rendered null when a browser reads HTML. Multiple spaces and any carriage returns are turned into a single space.  Space, therefore, has to be deliberately coded in.
+         </p>
+         <p>
+           Attributes, span/div
+         <br>
+           Attributes modify their elements, or are properties of elements. Span and Div, for instance, can have attributes added to them. Both elements contain text, Span is inline and Div is block.  Neither are void tags.  Div behaves much like the paragraph tag, but doesn't create as much space around it.
+         </p>
+      </div>
+    </div>
+   </div>
+ <div class="unit" id="Unit-1.2">
+   <h2>Unit One.Two</h2> <!--because being a numeral behind is awkward-->
+   <div class="section" id="1.stealing">
+         <div class="section-title">
+         Learning Code from Other Pages
+     </div>
+      <div class="notes">
+        <p>
+          Looking at the code of existing web pages provides excellent examples of code-in-action. Not only can you see the end product, but <em>how</em> the elements and style are formatted correctly to follow HTML (or CSS) syntax and rules.
+        </p>
+        <p>
+          Google Chrome's developer tools provides user-friendly ways to sift through complex HTML structure, as well as see how coders are minimizing redundancy (and errors). It's called a tool because not only can you use it, but through that use you add coding skill to your belt, so to speak.  
+        </p>
+        <p>
+          HTML structure can be complex due to the <b>"tree-like"</b> nature of it. Within elements lie additional elements.  This causes the wavy pattern we see when looking at HTML code; the further <b>indented</b> something is, the deeper it's nested. And, when looking at the page itself, this nesting is rendered as boxes within boxes (though the borders of the boxes may be invisible).
+        </p>
+        <p>
+         Programmer's text editors also make learning/performing programming easier.  Programs for writing programs! Or web pages, in this case.  They will, for instance, provide a corresponding closing tag for your opening one.
+        </p>
+      </div>
+    </div>
+  </div>
+
+ <div class="unit" id="Unit-1.3">
+   <h2>Unit One.Three</h2>
+   <div class="section" id="1.CSS">
+     <div class="section-title">
+         CSS
+     </div>
+      <div class="notes">
+         <p> 
+           As mentioned previously, CSS controls how an HTML page <em>looks</em>.  It also saves coders substantial time by allowing them to apply a repetitive style to multiple elements of the same type.
+         </p>
+         <p>
+          There are three ways to add style to a page:
+         <br>
+          1. Writing it in the head element of the HTML page. 
+         <br>
+          2. Within the head element, add a link to a separate CSS file. This keeps large projects organized, and looks something like this:
+         </p>
+            <div class="example">
+              &lt;link: rel="stylesheet" type="text/css" href="main.css"&gt;
+            </div>
+         <p>
+          3. Writing the style inline with the HTML.  Not the best choice, leads to a lot of repetition.  
+         </p>
+     </div>
+   </div>
+  
+   <div class="section" id="1.CSS-benefits">
+     <div class="section-title">
+         Some Particulars of CSS
+     </div>
+       <div class="notes">
+         <p>
+           CSS both helps avoid repetition and maintain consistency by applying a singular style to an unlimited number of instances of the same element. This, handily enough, also makes implementing changes easier. It's also ruled by an abstract concept called inheritance.  In a page of CSS code, the most specific rule applies. If a class has a specific attribute, and there's a class nested within it without any attributes specified, the nested class shares the attribute of the parent (ancestor) class. 
+         </p>
+              <div class="example"> 
+                A CSS Element:
+               <br>
+                h1 {
+                background-color: black;
+                }
+               <br>
+               <br>
+               "h1" is the selector. 
+               <br>
+               "background-color: black;" is the declaration
+               <br> 
+                "background-color is the property
+               <br>
+                and "black" is the value
+             </div>
+         <p>
+            One can find CSS elements in almanacs, such as this <a href="https://css-tricks.com/almanac/">one</a>.
+         </p> 
+     </div>
+   </div>
+  
+   <div class="section" id="1.images">
+     <div class="section-title">
+         Images
+     </div>
+         <div class="notes">
+           <p>
+             Save images to an image folder saved within project file.
+           </p>
+         </div>
+     </div>
+  <div class="section" id="1.steps">
+     <div class="section-title">
+         Steps to Styling/Coding
+     </div>
+       <div class="notes">
+         <p>
+           1. Look for natural boxes <br>
+           2. Look for repeated styles & semantic elements <br>
+           3. Write HTML <br>
+           4. Apply styles (big to small) <br>
+           5. Fix things (check various browsers, and resize windows) <br>
+           6. Verify <a href="http://validator.w3.org/#validate_by_input">HTML</a> and <a href="http://jigsaw.w3.org/css-validator/#validate_by_input">CSS</a>
+         </p>
+         <p>
+           Verify to ensure that your page and code displays properly in all browsers.  Very helpful for the debugging process! 
+       </div>
+     </div>
+ </div>
+</body>

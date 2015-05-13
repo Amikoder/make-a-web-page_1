@@ -1,0 +1,72 @@
+body {
+  font-family: courier;
+  background-color: pink;
+}
+
+/* No, no, I'm not colorblind, just picking arbitrarily at the moment. Maybe also slightly bad at matching. */
+
+.TOC {
+  background-color: gray;
+  max-width: 1000px;
+  margin: 5px;
+  border-radius: 9px;
+  padding: 1px;
+  
+}
+
+h1 {
+    text-align: center;
+    color: #294860;
+    background-color: #BDBDBD;
+    max-width: 1000px;
+}
+/* tried to mess around with box width properties...but mostly just got a wee bit confused. Will keep playing with this....*/
+
+h2 {
+  text-align: center;
+}
+
+ul {
+	list-style-type: none; /* bullets removed */
+}
+
+li {
+	font-size: 20px;
+	line-height: 44px; /* Hope you're not looking at this thing on a mobile device...*/
+}
+
+.unit {
+  text-align: center;
+  background-color: green;
+  margin: 5px;
+  border-radius: 9px;
+  padding: 1px;
+  max-width: 1000px;
+}
+
+.section {
+  text-align: left; /* to undo inherited center alignment in ancestral unit class... */
+  background-color: #CEF6CE;
+  border-radius: 15px;
+  padding: 8px;
+  margin: 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.example {
+  text-align: center;
+  font-weight: bold;
+  background-color: pink;
+  border-radius: 50px; 
+  padding: 15px;
+}
+
+.bold {
+  font-weight: bold;
+} /* just to see what all the span-hype is about*/
+
+
